@@ -4,7 +4,7 @@ import curriculo from "../assets/Curriculo_Everton_Mancio.pdf";
 
 function About() {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       <div className="content">
         <h1 className="appear">Sobre Mim</h1>
         <div className="appear">
@@ -32,6 +32,7 @@ function About() {
               Projetos educacionais voltados para <b>Matemática e Química</b>
             </li>
           </ul>
+          <br />
           Valorizo aprendizado constante e projetos que
           desafiem minha lógica e criatividade. Meu objetivo é evoluir como
           desenvolvedor e criar soluções <b>úteis, bem estruturadas e interessantes</b>.

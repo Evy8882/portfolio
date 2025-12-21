@@ -1,3 +1,26 @@
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 10;
+}
+.header a{
+  text-decoration: none;
+  color: #fff6;
+  font-family: monospace;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+.header a:hover{
+  color: white;
+  text-decoration: underline;
+}
 h1 {
   margin: 0.1em 0;
   font-size: 5em;
@@ -133,6 +156,7 @@ h2{
   width: 100%;
   min-height: 100vh;
   padding: 20px;
+  box-shadow: inset 10px 0 10px #000000;
 }
 .about-container>.image-container{
   flex: 1;
@@ -172,4 +196,51 @@ h2{
 .appear{
   animation: appear linear;
   animation-timeline: view();
+}
+
+/* Habilidades */
+
+.skills-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #121212;
+}
+.skills-container h1{
+  margin-bottom: 16px;
+}
+.skills-list{
+  text-align: center;
+}
+.skills-list h2{
+  margin-top: 8px;
+}
+.skills-group{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0;
+  width: 100%;
+}
+.skill-tag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 6px;
+  background-color: #000;
+  border-radius: 99px;
+  cursor: pointer;
+  font-style: normal;
+  font-family: serif;
+  font-size: 1.2em;
+  transition: 0.3s ease;
+}
+.skill-tag:hover{
+  filter: brightness(1.2);
+  transform: scale(1.05);
 }
