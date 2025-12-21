@@ -71,6 +71,10 @@ h2{
   width: 120px;
   transition: background-color 0.3s ease, color 0.3s ease;
   outline: 1px solid #555;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-button:first-child {
@@ -84,6 +88,14 @@ h2{
 }
 
 .home-button:first-child:hover {
-  background-color: rgb(146, 123, 45);
-  color: white;
+  background-color: rgb(177, 147, 49);
+}
+
+.button-icon{
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.invert{
+  filter: invert(1);
 }
