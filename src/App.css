@@ -1,8 +1,31 @@
 h1 {
   margin: 0.1em 0;
-  font-size: 8em;
-  color: rgb(196, 164, 61);
+  font-size: 5em;
   font-family: monospace;
+}
+
+.home-container h1{
+  color: rgb(196, 164, 61);
+}
+
+@media (min-width: 600px) {
+    .home-container h1{
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.15em solid rgb(196, 164, 61);
+      animation:
+        typing 2s steps(14),
+        cursor 0.4s step-end infinite alternate;
+  }
+}
+
+@keyframes cursor {
+  50% { border-right-color: transparent }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 14ch }
 }
 
 h2{
@@ -59,7 +82,7 @@ h2{
   justify-content: center;
   gap: 12px;
 }
-.home-button {
+.home-button, .link-button {
   padding: 0.8em 1.5em;
   font-size: 1em;
   border: none;
@@ -83,7 +106,7 @@ h2{
   outline: none;
 }
 
-.home-button:hover {
+.home-button:hover, .link-button:hover {
   background-color: #000;
 }
 
@@ -98,4 +121,55 @@ h2{
 }
 .invert{
   filter: invert(1);
+}
+
+/* SOBRE MIM */
+
+.about-container{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+.about-container>.image-container{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin: 16px;
+  border: 2px solid #222;
+  outline: 6px solid white;
+}
+.about-container>.image-container>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.about-container>.image-container>img:hover{
+  transform: scale(1.05);
+}
+.about-container>.content{
+  max-width: 60%;
+}
+.link-button{
+  width: 200px
+}
+
+@keyframes appear{
+  0% { opacity: 0; transform: translateY(40px); }
+  50% { opacity: 1; transform: translateY(0); }
+}
+
+.appear{
+  animation: appear linear;
+  animation-timeline: view();
 }
