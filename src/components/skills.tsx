@@ -2,107 +2,53 @@ function Skills() {
   return (
     <div className="skills-container" id="skills">
       <h1 className="appear">Habilidades</h1>
-          <div className="skills-list">
-            <h2 className="appear">Front-end</h2>
-            <div className="skills-group appear">
-              <i
-                className="skill-tag devicon-html5-plain"
-                style={{ backgroundColor: "#E34F26" }}
-              >
-                {" "}
-                HTML
-              </i>
-              <i
-                className="skill-tag devicon-css3-plain"
-                style={{ backgroundColor: "#1572B6" }}
-              >
-                {" "}
-                CSS
-              </i>
-              <i
-                className="skill-tag devicon-javascript-plain"
-                style={{ backgroundColor: "#F7DF1E", color: "black" }}
-              >
-                {" "}
-                JavaScript
-              </i>
-              <i
-                className="skill-tag devicon-react-original"
-                style={{ backgroundColor: "#61DAFB", color: "black" }}
-              >
-                {" "}
-                React/Native
-              </i>
-            </div>
-            <h2 className="appear">Back-end</h2>
-            <div className="skills-group appear">
-              <i
-                className="skill-tag devicon-php-plain"
-                style={{ backgroundColor: "#777BB4" }}
-              >
-                {" "}
-                PHP
-              </i>
-              <i
-                className="skill-tag devicon-nodejs-plain"
-                style={{ backgroundColor: "#339933" }}
-              >
-                {" "}
-                Node.js
-              </i>
-              <i
-                className="skill-tag devicon-express-original"
-                style={{ backgroundColor: "#000000" }}
-              >
-                {" "}
-                Express
-              </i>
-              <i
-                className="skill-tag devicon-python-plain"
-                style={{ backgroundColor: "#3776AB" }}
-              >
-                {" "}
-                Python
-              </i>
-            </div>
-            <h2 className="appear">Game dev</h2>
-            <div className="skills-group appear">
-              <i
-                className="skill-tag devicon-godot-plain"
-                style={{ backgroundColor: "#478CBF", color: "black" }}
-              >
-                {" "}
-                Godot
-              </i>
-              <i className="skill-tag" style={{ backgroundColor: "#8A2BE2" }}>
-                Game Maker
-              </i>
-            </div>
-            <h2 className="appear">Others</h2>
-            <div className="skills-group appear">
-              <i
-                className="skill-tag devicon-git-plain"
-                style={{ backgroundColor: "#F05032" }}
-              >
-                {" "}
-                Git
-              </i>
-              <i
-                className="skill-tag devicon-mysql-plain"
-                style={{ backgroundColor: "#4479A1" }}
-              >
-                {" "}
-                MySQL
-              </i>
-              <i
-                className="skill-tag devicon-typescript-plain"
-                style={{ backgroundColor: "#3178C6" }}
-              >
-                {" "}
-                Typescript
-              </i>
-            </div>
+      <div className="skills-list">
+        <div className="skills-group appear">
+          <h2 className="appear">Front-end</h2>
+          <div className="skill-tag" title="Linguagem de marcação para estruturar páginas web">
+            <i className="devicon-html5-plain"></i> HTML
+          </div>
+          <div className="skill-tag" title="Linguagem de estilo para estilizar páginas web">
+            <i className="devicon-css3-plain"></i> CSS
+          </div>
+          <div className="skill-tag" title="Linguagem de programação para interatividade em páginas web">
+            <i className="devicon-javascript-plain"></i> JavaScript
+          </div>
+          <div className="skill-tag" title="Biblioteca JavaScript para criar interfaces de usuário">
+            <i className="devicon-react-original"></i> React/Native
+          </div>
         </div>
+        <div className="skills-group appear">
+          <h2 className="appear">Back-end</h2>
+          <div className="skill-tag" title="Linguagem de programação para desenvolvimento web">
+            <i className="devicon-php-plain"></i> PHP
+          </div>
+          <div className="skill-tag" title="Ambiente de execução JavaScript no lado do servidor">
+            <i className="devicon-nodejs-plain"></i> Node.js
+          </div>
+          <div className="skill-tag" title="Framework para criar APIs e aplicações web com Node.js">
+            <i className="devicon-express-original"></i> Express
+          </div>
+          <div className="skill-tag" title="Linguagem de programação versátil e poderosa">
+            <i className="devicon-python-plain"></i> Python
+          </div>
+        </div>
+        <div className="skills-group appear">
+          <h2 className="appear">Outros</h2>
+          <div className="skill-tag" title="Sistema de controle de versão para rastrear mudanças no código">
+            <i className="devicon-git-plain"></i> Git
+          </div>
+          <div className="skill-tag" title="Plataforma para hospedagem e colaboração de código">
+            <i className="devicon-github-original"></i> Github
+          </div>
+          <div className="skill-tag" title="Sistema de gerenciamento de banco de dados relacional">
+            <i className="devicon-mysql-plain"></i> MySQL
+          </div>
+          <div className="skill-tag" title="Superset do JavaScript que adiciona tipagem estática">
+            <i className="devicon-typescript-plain"></i> Typescript
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
