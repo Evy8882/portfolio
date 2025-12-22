@@ -2,6 +2,7 @@ import Home from './components/home';
 import About from './components/about';
 import Skills from './components/skills';
 import Projects from './components/projects';
+import Footer from './components/footer';
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <About/>
       <Skills/>
       <Projects/>
+      <Footer/>
     </>
   )
 }

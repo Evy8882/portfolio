@@ -4,6 +4,7 @@ import PortfolioImage from "../assets/projects-imgs/portfolio.png";
 import ChemisterImage from "../assets/projects-imgs/chemister.png";
 import LabControlImage from "../assets/projects-imgs/labcontrol.png";
 import TubePreviewImage from "../assets/projects-imgs/tubepreview.png";
+import LerMaisImage from "../assets/projects-imgs/lermais.png";
 import LogGameImage from "../assets/projects-imgs/logarithmgame.png";
 
 function Projects() {
@@ -30,7 +31,7 @@ function Projects() {
         {
             title: "CheMister",
             description: "Aplicativo Web com funcionalidades diversas envolvendo cálculos químicos.",
-            deploy: "che-mister.vercel.app",
+            deploy: "https://che-mister.vercel.app",
             repository: "https://github.com/Evy8882/CheMister",
             image: ChemisterImage,
             techs: ["React", "TypeScript", "CSS"],
@@ -55,12 +56,12 @@ function Projects() {
             categories: ["Web Development", "Frontend", "Backend"]
         },
         {
-            title: "CollabTask",
-            description: "Aplicativo de gerenciamento de tarefas com foco na colaboração em equipe.",
+            title: "LerMais",
+            description: "Site criado em um Hackaton, disponibiliza livros de domínio público e independentes com sistema de recompensas aos usuários.",
             deploy: null,
             repository: "https://github.com/Evy8882/CollabTask",
-            image: null,
-            techs: ["React", "PHP", "MySQL"],
+            image: LerMaisImage,
+            techs: ["React", "JavaScript", "PHP", "MySQL"],
             categories: ["Web Development", "Frontend", "Backend"]
         },
         {

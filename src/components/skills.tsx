@@ -17,6 +17,9 @@ function Skills() {
           <div className="skill-tag" title="Biblioteca JavaScript para criar interfaces de usuário">
             <i className="devicon-react-original"></i> React/Native
           </div>
+          <div className="skill-tag" title="Biblioteca para estilização de componentes">
+            <i className="devicon-tailwindcss-plain"></i> Tailwind CSS
+          </div>
         </div>
         <div className="skills-group appear">
           <h2 className="appear">Back-end</h2>
@@ -32,6 +35,9 @@ function Skills() {
           <div className="skill-tag" title="Linguagem de programação versátil e poderosa">
             <i className="devicon-python-plain"></i> Python
           </div>
+          <div className="skill-tag" title="Microframework web para Python">
+          <i className="devicon-flask-original"></i> Flask
+          </div>
         </div>
         <div className="skills-group appear">
           <h2 className="appear">Outros</h2>
@@ -46,6 +52,9 @@ function Skills() {
           </div>
           <div className="skill-tag" title="Superset do JavaScript que adiciona tipagem estática">
             <i className="devicon-typescript-plain"></i> Typescript
+          </div>
+          <div className="skill-tag" title="Editor de código-fonte popular entre desenvolvedores">
+          <i className="devicon-vscode-plain"></i> VS Code
           </div>
         </div>
       </div>
