@@ -210,7 +210,7 @@ h2{
   box-shadow: inset 0 0 10px #000;
 }
 .skills-container h1{
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 .skills-list{
   display: flex;
@@ -259,4 +259,108 @@ h2{
 .skill-tag:hover{
   color: rgb(196, 164, 61);
   transform: scale(1.05);
+}
+
+/* Projects */
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.projects-container h1{
+  margin-bottom: 40px;
+}
+.projects-container .content{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 60px;
+  background-color: #121212;
+  box-shadow: inset 0 0 10px #000;
+  border-radius: 20px;
+}
+.project-card{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #222;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 8px;
+  transition: 0.3s ease;
+}
+.project-card .project-techs{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 8px;
+  font-size: 0.9em;
+  color: #aaa
+}
+.project-card .project-techs span{
+  background-color: #111;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.project-card:hover{
+  box-shadow: 0 0 20px rgb(196, 164, 61);
+}
+.project-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.project-card h2{
+  margin: 0 8px;
+}
+.project-card p{
+  margin: 0 8px;
+  flex-grow: 1;
+}
+.project-card .project-links{
+  margin-top: 12px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.project-card .project-links a{
+  text-decoration: none;
+  color: #fff;
+  font-family: monospace;
+  outline: 1px solid #555;
+  font-weight: bold;
+  padding: 8px;
+  background-color: #111;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+.project-card .project-links a:hover{
+  filter: brightness(.7);
+  transform: scale(1.05);
+}
+.project-card .project-links a:first-child{
+  background-color: rgb(196, 164, 61);
+  color: black;
+}
+.project-card .project-links a img{
+  width: 13px;
+  height: 13px;
+  margin-right: 6px;
+  filter: invert(1);
+}
+.project-card .project-links a:first-child img{
+  filter: none;
 }

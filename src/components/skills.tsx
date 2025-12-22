@@ -1,7 +1,7 @@
 function Skills() {
   return (
     <div className="skills-container" id="skills">
-      <h1 className="appear">Habilidades</h1>
+      <h1 className="appear">{"< "}Habilidades{" />"}</h1>
       <div className="skills-list">
         <div className="skills-group appear">
           <h2 className="appear">Front-end</h2>
