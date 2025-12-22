@@ -391,3 +391,67 @@ h2{
   color: #61dafb;
   text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 3em;
+  }
+  .home-container{
+    padding: 50px 0;
+  }
+  .about-container{
+    flex-direction: column-reverse;
+  }
+  
+  .about-container>.content{
+    max-width: 90%;
+  }
+
+  .skills-container{
+    padding: 10px 0 30px;
+  }
+
+  .skills-list{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-container .content{
+    padding: 20px;
+    width: 100%;
+    border-radius: 0;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  h1{
+    font-size: 2em;
+  }
+  .home-container{
+    padding: 0 0 30px;
+  }
+  .home-buttons-container{
+    flex-direction: column;
+    gap: 12px;
+    margin: 10px auto;
+    width: 80%;
+  }
+  .home-buttons-container *{
+    width: 100%;
+  }
+  .home-buttons-container * img{
+    margin: 0 8px;
+    height: 15px;
+    width: 15px;
+  }
+  .header{
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    position: static;
+  }
+  .project-card{
+    width: 100%;
+  }
+}
