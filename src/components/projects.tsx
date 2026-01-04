@@ -6,6 +6,8 @@ import LabControlImage from "../assets/projects-imgs/labcontrol.png";
 import TubePreviewImage from "../assets/projects-imgs/tubepreview.png";
 import LerMaisImage from "../assets/projects-imgs/lermais.png";
 import LogGameImage from "../assets/projects-imgs/logarithmgame.png";
+import ProjMan from "../assets/projects-imgs/projman.png";
+import Precometro from "../assets/projects-imgs/precometro.png";
 
 function Projects() {
     type Project = {
@@ -45,6 +47,24 @@ function Projects() {
             image: LabControlImage,
             techs: ["React Native", "Expo", "MySQL", "Express", "Node.js"],
             categories: ["Mobile Development", "Frontend", "Backend"]
+        },
+        {
+            title: "Proj-Man",
+            description: "Aplicativo desktop para gerenciamento de projetos com funcionalidades de criação, edição e exclusão de tarefas e notas.",
+            deploy: null,
+            repository: "https://github.com/Evy8882/Proj-Man",
+            image: ProjMan,
+            techs: ["Rust", "React", "CSS", "Tauri"],
+            categories: ["Desktop Development", "Frontend", "Backend"]
+        },
+        {
+            title: "Preçometro",
+            description: "Aplicativo Web, focado no backend, para comparação de preços de produtos em diferentes lojas online.",
+            deploy: null,
+            repository: "https://github.com/Evy8882/Precometro",
+            image: Precometro,
+            techs: ["React", "TypeScript", "CSS"],
+            categories: ["Web Development", "Backend"]
         },
         {
             title: "Tube-Preview",

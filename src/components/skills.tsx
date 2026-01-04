@@ -20,6 +20,9 @@ function Skills() {
           <div className="skill-tag" title="Biblioteca para estilização de componentes">
             <i className="devicon-tailwindcss-plain"></i> Tailwind CSS
           </div>
+          <div className="skill-tag" title="Biblioteca para estilização de componentes">
+            <i className="devicon-bootstrap-plain"></i> Bootstrap
+          </div>
         </div>
         <div className="skills-group appear">
           <h2 className="appear">Back-end</h2>
@@ -38,6 +41,9 @@ function Skills() {
           <div className="skill-tag" title="Microframework web para Python">
           <i className="devicon-flask-original"></i> Flask
           </div>
+          <div className="skill-tag" title="Linguagem de programação focada em segurança e desempenho">
+            <i className="devicon-rust-plain"></i> Rust
+          </div>
         </div>
         <div className="skills-group appear">
           <h2 className="appear">Outros</h2>
@@ -54,7 +60,10 @@ function Skills() {
             <i className="devicon-typescript-plain"></i> Typescript
           </div>
           <div className="skill-tag" title="Editor de código-fonte popular entre desenvolvedores">
-          <i className="devicon-vscode-plain"></i> VS Code
+            <i className="devicon-vscode-plain"></i> VS Code
+          </div>
+          <div className="skill-tag" title="Plataforma para containerização e virtualização leve">
+            <i className="devicon-docker-plain"></i> Docker
           </div>
         </div>
       </div>
