@@ -79,7 +79,7 @@ function Projects() {
             title: "LerMais",
             description: "Site criado em um Hackaton, disponibiliza livros de domínio público e independentes com sistema de recompensas aos usuários.",
             deploy: null,
-            repository: "https://github.com/Evy8882/CollabTask",
+            repository: "https://github.com/Evy8882/LerMais-Hackaton",
             image: LerMaisImage,
             techs: ["React", "JavaScript", "PHP", "MySQL"],
             categories: ["Web Development", "Frontend", "Backend"]
