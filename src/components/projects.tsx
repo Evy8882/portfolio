@@ -8,6 +8,8 @@ import LerMaisImage from "../assets/projects-imgs/lermais.png";
 import LogGameImage from "../assets/projects-imgs/logarithmgame.png";
 import ProjMan from "../assets/projects-imgs/projman.png";
 import Precometro from "../assets/projects-imgs/precometro.png";
+import OpenLab from "../assets/projects-imgs/OpenLab.jpeg";
+import EncurtaeImage from "../assets/projects-imgs/encurtae.png";
 
 function Projects() {
     type Project = {
@@ -47,6 +49,24 @@ function Projects() {
             image: LabControlImage,
             techs: ["React Native", "Expo", "MySQL", "Express", "Node.js"],
             categories: ["Mobile Development", "Frontend", "Backend"]
+        },
+        {
+            title: "OpenLab",
+            description: "Aplicativo mobile que facilita o acesso de estudantes a laboratórios e salas disponíveis fora do horário de aula.",
+            deploy: null,
+            repository: "https://github.com/Evy8882/OpenLab",
+            image: OpenLab,
+            techs: ["React Native", "TypeScript", "mongoDB"],
+            categories: ["Mobile Development", "Frontend", "Backend"]
+        },
+        {
+            title: "Encurtaê",
+            description: "Encurtador de URLs com React, Backend em GO e banco de dados firebase.",
+            deploy: "https://encurtae.vercel.app/",
+            repository: "https://github.com/Evy8882/encurtae",
+            image: EncurtaeImage,
+            techs: ["React", "GO", "Firebase"],
+            categories: ["Web Development", "Frontend", "Backend"]
         },
         {
             title: "Proj-Man",

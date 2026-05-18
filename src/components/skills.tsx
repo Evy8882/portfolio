@@ -1,9 +1,11 @@
+import SpotlightCard from './SpotlightCard';
+
 function Skills() {
   return (
     <div className="skills-container" id="skills">
       <h1 className="appear">{"< "}Habilidades{" />"}</h1>
       <div className="skills-list">
-        <div className="skills-group appear">
+        <SpotlightCard className="skills-group appear">
           <h2 className="appear">Front-end</h2>
           <div className="skill-tag" title="Linguagem de marcação para estruturar páginas web">
             <i className="devicon-html5-plain"></i> HTML
@@ -23,8 +25,8 @@ function Skills() {
           <div className="skill-tag" title="Biblioteca para estilização de componentes">
             <i className="devicon-bootstrap-plain"></i> Bootstrap
           </div>
-        </div>
-        <div className="skills-group appear">
+        </SpotlightCard>
+        <SpotlightCard className="skills-group appear">
           <h2 className="appear">Back-end</h2>
           <div className="skill-tag" title="Linguagem de programação para desenvolvimento web">
             <i className="devicon-php-plain"></i> PHP
@@ -44,8 +46,8 @@ function Skills() {
           <div className="skill-tag" title="Linguagem de programação focada em segurança e desempenho">
             <i className="devicon-rust-plain"></i> Rust
           </div>
-        </div>
-        <div className="skills-group appear">
+        </SpotlightCard>
+        <SpotlightCard className="skills-group appear">
           <h2 className="appear">Outros</h2>
           <div className="skill-tag" title="Sistema de controle de versão para rastrear mudanças no código">
             <i className="devicon-git-plain"></i> Git
@@ -65,7 +67,7 @@ function Skills() {
           <div className="skill-tag" title="Plataforma para containerização e virtualização leve">
             <i className="devicon-docker-plain"></i> Docker
           </div>
-        </div>
+        </SpotlightCard>
       </div>
     </div>
   );

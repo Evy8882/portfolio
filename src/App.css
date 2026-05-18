@@ -21,34 +21,15 @@
   color: white;
   text-decoration: underline;
 }
-h1 {
+h1, .home-title {
   margin: 0.1em 0;
   font-size: 5em;
+  font-weight: bold;
   font-family: monospace;
 }
 
-.home-container h1{
+.home-container .home-title{
   color: rgb(196, 164, 61);
-}
-
-@media (min-width: 600px) {
-    .home-container h1{
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: 0.15em solid rgb(196, 164, 61);
-      animation:
-        typing 2s steps(14),
-        cursor 0.4s step-end infinite alternate;
-  }
-}
-
-@keyframes cursor {
-  50% { border-right-color: transparent }
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 14ch }
 }
 
 h2{
@@ -208,6 +189,7 @@ h2{
   min-height: 100vh;
   background-color: #121212;
   box-shadow: inset 0 0 10px #000;
+  padding: 60px 0;
 }
 .skills-container h1{
   margin-bottom: 40px;
@@ -217,7 +199,7 @@ h2{
   width: 80%;
   max-width: 800px;
   justify-content: center;
-  gap: 6px;
+  gap: 12px;
   background: transparent;
   /* box-shadow: 0px 0px 20px rgb(196, 164, 61); */
 }
@@ -232,7 +214,6 @@ h2{
   flex-wrap: wrap;
   gap: 4px;
   width: 100%;
-  background-color: #020202;
   border-radius: 12px;
   padding: 16px 0;
   box-shadow: 0px 0px 5px rgb(196, 164, 61);
@@ -269,6 +250,7 @@ h2{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 60px 0;
 }
 .projects-container h1{
   margin-bottom: 40px;
@@ -289,7 +271,7 @@ h2{
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: #222;
+  background-color: #202020;
   border-radius: 12px;
   box-shadow: 0 0 10px #000;
   width: 300px;
@@ -392,7 +374,7 @@ h2{
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   h1{
     font-size: 3em;
   }
